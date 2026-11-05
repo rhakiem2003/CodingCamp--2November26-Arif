@@ -1,0 +1,163 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create the directory structure and stub files": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890708834
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890724995
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891192925
+      }
+    ],
+    "1.2 Implement shared storage utilities in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890711438
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891197694
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891386402
+      }
+    ],
+    "1.3 Implement shared pure utility functions in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890712175
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891201210
+      }
+    ],
+    "2.1 Implement Focus Timer pure state functions in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890712472
+      }
+    ],
+    "2.4 Implement `focusTimerModule` in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890713052
+      }
+    ],
+    "3. Checkpoint — timer smoke test": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890713345
+      }
+    ],
+    "4.1 Implement To-Do pure state functions in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890713560
+      }
+    ],
+    "4.4 Implement `todoModule` in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890713785
+      }
+    ],
+    "5. Checkpoint — To-Do module smoke test": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890714001
+      }
+    ],
+    "6.1 Implement Quick Links pure state functions in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890714264
+      }
+    ],
+    "6.4 Implement `quickLinksModule` in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890714532
+      }
+    ],
+    "7. Checkpoint — Quick Links module smoke test": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890714800
+      }
+    ],
+    "8.1 Implement `greetingModule` in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890715045
+      }
+    ],
+    "9.1 Implement the top-level `init()` bootstrap in `js/app.js`": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890715863
+      }
+    ],
+    "10.1 Build the complete `index.html` structure": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890716102
+      }
+    ],
+    "11.1 Define CSS design tokens and global styles": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890716334
+      }
+    ],
+    "11.2 Implement grid/column layout and module card styles": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890716544
+      }
+    ],
+    "11.3 Style interactive controls and hover states": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890716701
+      }
+    ],
+    "12. Final checkpoint — full integration": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793890716856
+      }
+    ]
+  }
+}

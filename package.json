@@ -1,0 +1,12 @@
+{
+  "name": "todo-life-dashboard",
+  "version": "1.0.0",
+  "description": "A zero-dependency single-page dashboard with Greeting, Focus Timer, To-Do List, and Quick Links modules.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/app.test.js"
+  },
+  "devDependencies": {
+    "fast-check": "3.23.2"
+  }
+}
