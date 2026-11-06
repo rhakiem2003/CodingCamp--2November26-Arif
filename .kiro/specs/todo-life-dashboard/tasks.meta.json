@@ -1,5 +1,14 @@
 {
-  "pbtResults": {},
+  "pbtResults": {
+    "1.4 Write property tests for shared utility functions": {
+      "status": "passed",
+      "lastRunTimestamp": 1793892356889
+    },
+    "2.2 Write property tests for Focus Timer pure functions": {
+      "status": "passed",
+      "lastRunTimestamp": 1793892973826
+    }
+  },
   "executionHistory": {
     "1.1 Create the directory structure and stub files": [
       {
@@ -45,6 +54,11 @@
         "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
         "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
         "timestamp": 1793891201210
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891694207
       }
     ],
     "2.1 Implement Focus Timer pure state functions in `js/app.js`": [
@@ -52,6 +66,16 @@
         "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
         "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
         "timestamp": 1793890712472
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891703373
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891822721
       }
     ],
     "2.4 Implement `focusTimerModule` in `js/app.js`": [
@@ -59,6 +83,26 @@
         "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
         "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
         "timestamp": 1793890713052
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793893037679
+      },
+      {
+        "executionId": "ab706926-13d4-4437-9cd3-ddab3975b99a",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793971145645
+      },
+      {
+        "executionId": "bb79212a-e3aa-4d76-bb10-886e556cf9c4",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793972578193
+      },
+      {
+        "executionId": "bb79212a-e3aa-4d76-bb10-886e556cf9c4",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793973016139
       }
     ],
     "3. Checkpoint — timer smoke test": [
@@ -73,6 +117,16 @@
         "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
         "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
         "timestamp": 1793890713560
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793892396015
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793893002300
       }
     ],
     "4.4 Implement `todoModule` in `js/app.js`": [
@@ -80,6 +134,11 @@
         "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
         "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
         "timestamp": 1793890713785
+      },
+      {
+        "executionId": "5be4e4e3-2634-4c44-b8e1-3ad215c14a24",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793974059793
       }
     ],
     "5. Checkpoint — To-Do module smoke test": [
@@ -94,6 +153,16 @@
         "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
         "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
         "timestamp": 1793890714264
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793892400346
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793893010971
       }
     ],
     "6.4 Implement `quickLinksModule` in `js/app.js`": [
@@ -157,6 +226,116 @@
         "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
         "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
         "timestamp": 1793890716856
+      }
+    ],
+    "1. Project scaffolding and shared utilities": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891694401
+      }
+    ],
+    "1.4 Write property tests for shared utility functions": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891856083
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793892372277
+      }
+    ],
+    "1.5 Write unit tests for shared utility functions": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793891860686
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793892378830
+      }
+    ],
+    "2.2 Write property tests for Focus Timer pure functions": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793892406823
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793893018836
+      }
+    ],
+    "2.3 Write unit tests for Focus Timer pure functions": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793892411284
+      },
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793893026862
+      }
+    ],
+    "4.2 Write property tests for To-Do pure functions": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793893049856
+      },
+      {
+        "executionId": "bb79212a-e3aa-4d76-bb10-886e556cf9c4",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793973027296
+      }
+    ],
+    "4.3 Write unit tests for To-Do pure functions": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793893058315
+      },
+      {
+        "executionId": "bb79212a-e3aa-4d76-bb10-886e556cf9c4",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793973033354
+      }
+    ],
+    "6.2 Write property tests for Quick Links pure functions": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793893066710
+      },
+      {
+        "executionId": "bb79212a-e3aa-4d76-bb10-886e556cf9c4",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793973038690
+      }
+    ],
+    "6.3 Write unit tests for Quick Links pure functions": [
+      {
+        "executionId": "55f0fcbe-c808-46c7-9e66-09c2a827343b",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793893073993
+      },
+      {
+        "executionId": "bb79212a-e3aa-4d76-bb10-886e556cf9c4",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793973043790
+      }
+    ],
+    "2. Focus Timer — pure logic and DOM wiring": [
+      {
+        "executionId": "bb79212a-e3aa-4d76-bb10-886e556cf9c4",
+        "chatSessionId": "sess_cd027d7f-86b9-4f38-b535-dfbc3020283c",
+        "timestamp": 1793973016677
       }
     ]
   }

@@ -8,7 +8,7 @@ Build a zero-dependency, single-page web application delivered as three static f
 
 ## Tasks
 
-- [ ] 1. Project scaffolding and shared utilities
+- [x] 1. Project scaffolding and shared utilities
   - [x] 1.1 Create the directory structure and stub files
     - Create `index.html` (semantic HTML5 boilerplate with four module card placeholders)
     - Create `css/style.css` (empty file with a file-level comment)
@@ -22,7 +22,7 @@ Build a zero-dependency, single-page web application delivered as three static f
     - Write `loadFromStorage(key)` — localStorage.getItem + JSON.parse; returns null on any parse or missing-key error
     - _Requirements: 3.11, 4.7_
 
-  - [-] 1.3 Implement shared pure utility functions in `js/app.js`
+  - [x] 1.3 Implement shared pure utility functions in `js/app.js`
     - Write `getGreeting(hour)` mapping integer hour [0–23] to one of four greeting strings per the exact boundaries in the design
     - Write `formatDate(date)` returning "Weekday, Month Day, Year"
     - Write `formatTimeDisplay(date)` returning "HH:MM:SS" (24-hour)
@@ -32,13 +32,13 @@ Build a zero-dependency, single-page web application delivered as three static f
     - Write `isDuplicate(links, label, url)` returning boolean
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 2.6, 3.2, 3.3, 4.2, 4.3, 4.6_
 
-  - [ ]* 1.4 Write property tests for shared utility functions
+  - [x]* 1.4 Write property tests for shared utility functions
     - **Property 1: Greeting mapping covers all 24 hours exactly** — `fc.integer({ min: 0, max: 23 })` asserts exactly one of the four strings for every hour in [0, 23] with correct boundary mapping
     - **Property 2: Date format always matches the expected pattern** — `fc.date()` asserts split on `", "` and `" "` yields valid weekday, month, day, year matching the Date object
     - **Property 3: Timer formatTime always produces valid MM:SS** — `fc.integer({ min: 0, max: 1500 })` asserts `"MM:SS"` form where `parseInt(MM)*60 + parseInt(SS) === s`
     - **Validates: Requirements 1.2, 1.3, 1.4, 1.5, 1.6, 2.6**
 
-  - [ ]* 1.5 Write unit tests for shared utility functions
+  - [x]* 1.5 Write unit tests for shared utility functions
     - `getGreeting` boundary values: hours 0, 4, 5, 11, 12, 17, 18, 20, 21, 23
     - `formatTime(0) === "00:00"`, `formatTime(1500) === "25:00"`, `formatTime(90) === "01:30"`
     - `validateTaskText("")` fails, `validateTaskText(" ")` fails, `validateTaskText("a".repeat(201))` fails
@@ -47,39 +47,39 @@ Build a zero-dependency, single-page web application delivered as three static f
     - Corrupt JSON in loadFromStorage returns null
     - _Requirements: 1.3, 1.4, 1.5, 1.6, 2.6, 3.2, 3.3, 4.2, 4.3_
 
-- [ ] 2. Focus Timer — pure logic and DOM wiring
-  - [~] 2.1 Implement Focus Timer pure state functions in `js/app.js`
+- [x] 2. Focus Timer — pure logic and DOM wiring
+  - [x] 2.1 Implement Focus Timer pure state functions in `js/app.js`
     - Write `timerTick(state)` — decrements remaining by 1; sets `complete: true` and `running: false` when reaching 0
     - Write `timerStart(state)` — returns state unchanged if `running === true` or `complete === true`; otherwise returns state with `running: true`
     - Write `timerStop(state)` — returns state with `running: false`
     - Write `timerReset(state)` — always returns `{ remaining: 1500, running: false, complete: false }`
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.7, 2.8_
 
-  - [ ]* 2.2 Write property tests for Focus Timer pure functions
+  - [x]* 2.2 Write property tests for Focus Timer pure functions
     - **Property 4: Timer reset is always idempotent from any state** — `fc.record({ remaining: fc.integer({min:0,max:1500}), running: fc.boolean(), complete: fc.boolean() })` asserts `timerReset` always returns `{ remaining: 1500, running: false, complete: false }`
     - **Property 5: Timer start is a no-op when already running or complete** — generates running and complete states; asserts `timerStart(state)` returns state with all fields unchanged
     - **Validates: Requirements 2.1, 2.4, 2.7, 2.8**
 
-  - [ ]* 2.3 Write unit tests for Focus Timer pure functions
+  - [x]* 2.3 Write unit tests for Focus Timer pure functions
     - `timerTick` on state `{ remaining: 1, running: true, complete: false }` → `{ remaining: 0, running: false, complete: true }`
     - `timerStop` on running state → `running === false`, remaining unchanged
     - Session-complete state: `timerStart` returns identical state
     - `formatTime` spot-checks (already covered in 1.5; re-verify via timer integration)
     - _Requirements: 2.2, 2.3, 2.5, 2.7, 2.8_
 
-  - [~] 2.4 Implement `focusTimerModule` in `js/app.js`
+  - [x] 2.4 Implement `focusTimerModule` in `js/app.js`
     - Write `focusTimerModule.init()` — initialises state, attaches Start/Stop/Reset button listeners, calls `render()`
     - Write the module-private `render()` — updates `#timer-display` with `formatTime(state.remaining)`, shows/hides `#timer-message`, updates button enabled states
     - Wire Start button to `timerStart`, Stop to `timerStop`, Reset to `timerReset` with `setInterval`/`clearInterval` side effects
     - Handle the session-complete message display in `#timer-message` when `state.complete === true`
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8_
 
-- [~] 3. Checkpoint — timer smoke test
+- [ ] 3. Checkpoint — timer smoke test
   - Ensure timer Start/Stop/Reset functions work correctly in isolation via unit tests.
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 4. To-Do Module — pure logic and DOM wiring
-  - [~] 4.1 Implement To-Do pure state functions in `js/app.js`
+  - [x] 4.1 Implement To-Do pure state functions in `js/app.js`
     - Write `addTask(tasks, text)` — trims text, validates via `validateTaskText`, generates id, returns new array or null
     - Write `deleteTask(tasks, id)` — returns filtered array excluding matching id
     - Write `toggleTask(tasks, id)` — flips `completed` on matching task; returns new array
@@ -102,7 +102,7 @@ Build a zero-dependency, single-page web application delivered as three static f
     - `editTask` cancel scenario: original text preserved when edit is discarded
     - _Requirements: 3.2, 3.3, 3.4, 3.5, 3.6, 3.8, 3.9_
 
-  - [~] 4.4 Implement `todoModule` in `js/app.js`
+  - [x] 4.4 Implement `todoModule` in `js/app.js`
     - Write `todoModule.init()` — calls `loadFromStorage("todo-tasks")`, handles null/corrupt JSON (show error, empty list), attaches form listener (Enter key + button), calls `render()`
     - Write `todoModule.render(tasks)` — rebuilds `#todo-list` DOM: each task gets a checkbox, text span (strikethrough when `completed`), edit button, and delete button
     - Wire Add control: validate → `addTask` → `saveToStorage` → `render()`; show inline error on rejection
@@ -112,12 +112,12 @@ Build a zero-dependency, single-page web application delivered as three static f
     - Handle `saveToStorage` exceptions: show inline error, roll back in-memory change
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, 3.13_
 
-- [~] 5. Checkpoint — To-Do module smoke test
+- [ ] 5. Checkpoint — To-Do module smoke test
   - Ensure all To-Do pure function tests pass.
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 6. Quick Links Module — pure logic and DOM wiring
-  - [~] 6.1 Implement Quick Links pure state functions in `js/app.js`
+  - [x] 6.1 Implement Quick Links pure state functions in `js/app.js`
     - Write `addLink(links, label, url)` — trims inputs, validates via `validateLink`, checks `isDuplicate`, generates id, returns new array or null
     - Write `deleteLink(links, id)` — returns filtered array excluding matching id
     - _Requirements: 4.1, 4.2, 4.3, 4.5, 4.6_
@@ -135,7 +135,7 @@ Build a zero-dependency, single-page web application delivered as three static f
     - `deleteLink` on last remaining link → empty array
     - _Requirements: 4.2, 4.3, 4.5, 4.6_
 
-  - [~] 6.4 Implement `quickLinksModule` in `js/app.js`
+  - [ ] 6.4 Implement `quickLinksModule` in `js/app.js`
     - Write `quickLinksModule.init()` — loads from `"quick-links"` key, handles null/corrupt JSON, attaches form listener, calls `render()`
     - Write `quickLinksModule.render(links)` — rebuilds `#ql-list` DOM: each link renders as a clickable button (opens URL in new tab via `window.open`) with a delete control
     - Wire Add control: validate → `addLink` → `saveToStorage` → `render()`; show inline error in `#ql-error` on rejection or duplicate; clear error on success
@@ -143,19 +143,19 @@ Build a zero-dependency, single-page web application delivered as three static f
     - Handle `saveToStorage` exceptions: show inline error in `#ql-error`, do NOT update rendered list
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9_
 
-- [~] 7. Checkpoint — Quick Links module smoke test
+- [ ] 7. Checkpoint — Quick Links module smoke test
   - Ensure all Quick Links pure function tests pass.
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 8. Greeting Module — live clock wiring
-  - [~] 8.1 Implement `greetingModule` in `js/app.js`
+  - [ ] 8.1 Implement `greetingModule` in `js/app.js`
     - Write `greetingModule.init()` — starts a `setInterval` of 1000 ms that calls the private `tick()` function
     - Write the private `tick()` — calls `new Date()`, calls `formatTimeDisplay`, `formatDate`, and `getGreeting`; updates `#greeting-text`, `#current-time`, and `#current-date`
     - Handle invalid Date (fallback to `"--:--:--"`, `"---"`, `"---"`)
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9_
 
 - [ ] 9. Bootstrap — wire all modules together
-  - [~] 9.1 Implement the top-level `init()` bootstrap in `js/app.js`
+  - [ ] 9.1 Implement the top-level `init()` bootstrap in `js/app.js`
     - Add a `DOMContentLoaded` listener that calls `greetingModule.init()`, `focusTimerModule.init()`, `todoModule.init()`, and `quickLinksModule.init()` in order
     - _Requirements: 5.1, 5.2_
 
@@ -168,31 +168,31 @@ Build a zero-dependency, single-page web application delivered as three static f
     - _Requirements: 3.12, 3.13, 4.9, 2.5, 2.8_
 
 - [ ] 10. HTML markup — `index.html`
-  - [~] 10.1 Build the complete `index.html` structure
+  - [ ] 10.1 Build the complete `index.html` structure
     - Write semantic HTML5: `<header>` for Greeting module (contains `#greeting-text`, `#current-time`, `#current-date`), `<section>` cards for Focus Timer, To-Do List, and Quick Links
     - Add all DOM targets required by `js/app.js`: `#timer-display`, `#timer-start`, `#timer-stop`, `#timer-reset`, `#timer-message`, `#todo-input`, `#todo-add-btn`, `#todo-list`, `#ql-label-input`, `#ql-url-input`, `#ql-add-btn`, `#ql-error`, `#ql-list`
     - Reference `css/style.css` and `js/app.js` (defer or place before `</body>`)
     - _Requirements: 5.1, 5.2, 5.3_
 
 - [ ] 11. CSS styling and responsive layout — `css/style.css`
-  - [~] 11.1 Define CSS design tokens and global styles
+  - [ ] 11.1 Define CSS design tokens and global styles
     - Declare CSS custom properties for color palette, spacing scale, border-radius, font-size scale, and font-family system stack
     - Apply `box-sizing: border-box` globally; set base font-family to the sans-serif system stack
     - _Requirements: 6.2, 6.3, 6.5_
 
-  - [~] 11.2 Implement grid/column layout and module card styles
+  - [ ] 11.2 Implement grid/column layout and module card styles
     - Lay out the four module cards in a CSS Grid (≥768 px: two-column or four-column; <768 px: single-column via media query)
     - Style each card with consistent padding, border, and border-radius from design tokens
     - _Requirements: 6.1, 6.6_
 
-  - [~] 11.3 Style interactive controls and hover states
+  - [ ] 11.3 Style interactive controls and hover states
     - Apply consistent button styles (background, border, padding, cursor) across all four modules using shared tokens
     - Add `:hover` rules that change at least one visible CSS property (background-color or border-color) for every button, input, and link button
     - Style the strikethrough state for completed tasks (`text-decoration: line-through`)
     - Style inline error messages (color, font-size)
     - _Requirements: 6.2, 6.3, 6.4_
 
-- [~] 12. Final checkpoint — full integration
+- [ ] 12. Final checkpoint — full integration
   - Open `index.html` via `file://` URL (or serve locally) and manually verify all four modules render and respond correctly.
   - Ensure all automated tests pass, ask the user if questions arise.
 
