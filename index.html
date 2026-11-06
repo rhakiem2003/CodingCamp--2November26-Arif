@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Greeting Module -->
     <header class="module-card" id="greeting-module">
       <div id="greeting-text">Good Morning</div>
       <div id="current-time">--:--:--</div>
@@ -15,11 +14,10 @@
     </header>
 
     <main class="dashboard-grid">
-      <!-- Focus Timer Module -->
       <section class="module-card" id="timer-module" aria-label="Focus Timer">
         <h2>Focus Timer</h2>
         <div id="timer-display">25:00</div>
-        <div id="timer-message" hidden>Session complete!</div>
+        <div id="timer-message" hidden></div>
         <div class="timer-controls">
           <button id="timer-start" type="button">Start</button>
           <button id="timer-stop" type="button">Stop</button>
@@ -27,41 +25,21 @@
         </div>
       </section>
 
-      <!-- To-Do List Module -->
       <section class="module-card" id="todo-module" aria-label="To-Do List">
         <h2>To-Do List</h2>
         <div class="todo-add-form">
-          <input
-            type="text"
-            id="todo-input"
-            placeholder="Add a new task…"
-            maxlength="200"
-            aria-label="New task description"
-          />
+          <input type="text" id="todo-input" placeholder="Add a new task…" maxlength="200" aria-label="New task description" />
           <button id="todo-add-btn" type="button">Add</button>
         </div>
         <div id="todo-error" class="error-message" hidden></div>
         <ul id="todo-list" aria-label="Task list"></ul>
       </section>
 
-      <!-- Quick Links Module -->
       <section class="module-card" id="ql-module" aria-label="Quick Links">
         <h2>Quick Links</h2>
         <div class="ql-add-form">
-          <input
-            type="text"
-            id="ql-label-input"
-            placeholder="Label"
-            maxlength="50"
-            aria-label="Link label"
-          />
-          <input
-            type="url"
-            id="ql-url-input"
-            placeholder="https://example.com"
-            maxlength="2048"
-            aria-label="Link URL"
-          />
+          <input type="text" id="ql-label-input" placeholder="Label" maxlength="50" aria-label="Link label" />
+          <input type="url" id="ql-url-input" placeholder="https://example.com" maxlength="2048" aria-label="Link URL" />
           <button id="ql-add-btn" type="button">Add</button>
         </div>
         <div id="ql-error" class="error-message" hidden></div>
@@ -69,6 +47,6 @@
       </section>
     </main>
 
-    <script type="module" src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
   </body>
 </html>
